@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background-color: #dadbdf;
+  font-family: 'Poppins', sans-serif;
+  color: #111827;
+}
+
+.donut-graph{
+  width:200px;
+  height:200px;
+  display: grid;
+  place-items: center;
+  border-radius:100%;
+  background:conic-gradient(
+    rgb(20, 164, 231) 0deg 250deg,
+    orange 250deg 360deg
+  );
+}
+
+.donut-graph::after{
+  content: "";
+  display: block;
+  background: white;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+}
