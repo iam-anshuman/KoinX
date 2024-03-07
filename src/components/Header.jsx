@@ -32,7 +32,7 @@ export default function Header() {
                 <div className="flex items-center gap-4">
                   <div className="sm:flex sm:gap-4">
                     <a
-                      className="rounded-md  bg-[#0058ff] px-9 py-2.5 text-md font-medium text-white shadow"
+                      className="rounded-md hidden md:block bg-[#0058ff] px-9 py-2.5 text-md font-medium text-white shadow"
                       href="#"
                     >
                       Get Started

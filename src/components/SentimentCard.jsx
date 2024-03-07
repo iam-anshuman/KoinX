@@ -4,7 +4,7 @@ import { InfoIcon, NewsPaperIcon, TrendingIcon } from './Icons'
 export default function SentimentCard() {
   return (
     <section className='my-4'>
-        <div className="card w-3/5 mx-7 bg-slate-50 basis-3/5">
+        <div className="card w-full md:w-3/5 mx-2 md:mx-7 bg-slate-50 basis-3/5">
             <div className="card-body">
             <h2 className="card-title text-3xl font-semibold">Sentiment</h2>
             <h3 className='text-black/60 text-2xl font-semibold'>Key Events <InfoIcon/></h3>
@@ -24,7 +24,7 @@ export default function SentimentCard() {
                     </div>
               </div> 
               <div className="carousel-item ">
-                    <div className="rounded-lg w-[40rem] bg-green-300/30 shadow-xl">
+                    <div className="rounded-lg md:w-[40rem] bg-green-300/30 shadow-xl">
                           <div className="flex">
                             <div className='p-7 basis-1/6'>
                                 <TrendingIcon/>
@@ -53,21 +53,21 @@ export default function SentimentCard() {
             <div className="mx-7 my-4">
             <h3 className='text-black/60 text-2xl font-semibold'>Analyst Estimates <InfoIcon/></h3>
             <div className="flex">
-                <div className='rounded-full text-green-500  bg-green-400/10 inline-block p-10 my-2'>
-                    <div className='text-4xl py-3'>
+                <div className='rounded-full text-green-500 bg-green-400/10 inline-block p-5 md:p-10 lg:my-2'>
+                    <div className='text-xl p-5 md:py-3'>
                         76%
                     </div>  
                 </div>
                 <div className='flex-col text-black/40'>
-                    <div className='flex m-6'>
+                    <div className='flex m-1 lg:m-6'>
                         <div >Buy</div>
                         <progress className="progress progress-success w-56 m-2" value="76" max="100"></progress>76%
                     </div>
-                    <div className='flex m-6'>
+                    <div className='flex m-1 lg:m-6'>
                         <div>Hold</div>
                         <progress className="progress w-56 m-2" value="8" max="100"></progress>8%
                     </div>
-                    <div className='flex m-6'>
+                    <div className='flex m-1 lg:m-6'>
                         <div>Sell</div>
                         <progress className="progress progress-error w-56 m-2" value="16" max="100"></progress>16%
                     </div>

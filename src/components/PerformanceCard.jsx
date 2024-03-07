@@ -4,7 +4,7 @@ import { InfoIcon } from './Icons';
 export default function PerformanceCard() {
   return (
     <section>
-    <div className="card w-3/5 bg-slate-50  mx-7">
+    <div className="card w-full md:w-3/5 bg-slate-50 mx-2 md:mx-7">
       <div className="card-body ">
         <h2 className="card-title text-2xl">Performance</h2>
         <div className='flex align-middle my-5'>
@@ -12,12 +12,12 @@ export default function PerformanceCard() {
             <span className='block text-black/40'>Today's Low</span>
             <div className='block'>46,930.22</div>        
         </div>
-        <div class="inline-block w-3/5 my-5 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-          <div class="bg-gradient-to-r from-red-400 via-yellow-300 to-green-600 h-2.5 rounded-full" style={{width: "100%"}}></div>
-            <div className='border-b-8 border-b-black border-l-8 border-l-transparent border-r-8 border-r-transparent w-2 relative left-[78%]'></div>
-            <div className=' relative left-[72%] text-black/60'>$48,637.83</div>
+        <div class="inline-block w-[50%] md:w-3/5 my-5 mx-auto bg-gray-200 rounded-full h-1 md:h-2.5 ">
+          <div class="bg-gradient-to-r from-red-400 via-yellow-300 to-green-600 h-1 md:h-2.5 rounded-full" style={{width: "100%"}}></div>
+            <div className='border-b-8 border-b-black border-l-8 border-l-transparent border-r-8 border-r-transparent w-2 relative left-[50%] md:left-[78%]'></div>
+            <div className='relative left-[35%] md:left-[72%] text-black/60'>$48,637.83</div>
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-col mx-4'>
             <span className='text-black/40'>Today's High</span>
             <div>49,343.83</div>
         </div>
@@ -27,8 +27,8 @@ export default function PerformanceCard() {
             <span className='block text-black/40'>52W Low</span>
             <div className='block'>16,930.22</div>        
         </div>
-        <div class="inline-block w-3/5 my-5 mx-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-          <div class="bg-gradient-to-r from-red-400 via-yellow-300 to-green-600 h-2.5 rounded-full" style={{width: "100%"}}></div>
+        <div class="inline-block w-[50%] md:w-3/5 my-5 mx-auto bg-gray-200 rounded-full h-1 md:h-2.5">
+          <div class="bg-gradient-to-r from-red-400 via-yellow-300 to-green-600 h-1 md:h-2.5 rounded-full" style={{width: "100%"}}></div>
         </div>
         <div className='flex flex-col'>
             <span className='text-black/40'>52W High</span>
@@ -37,7 +37,7 @@ export default function PerformanceCard() {
         </div>   
         <h2 className='text-black/70 text-xl font-semibold my-5'>Fundamentals <InfoIcon/></h2>
         <div className='flex justify-between'>
-            <div className='basis-2/5'>
+            <div className='md:basis-2/5'>
                 <span className='text-black/60 inline-block w-48 mx-auto'>Bitcoin</span>
                 <span>$16,815.46</span>
                 <div className='divider'></div>

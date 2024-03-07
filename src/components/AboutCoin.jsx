@@ -4,7 +4,7 @@ import { ArrowIcon } from './Icons'
 export default function AboutCoin() {
   return (
     <section>
-        <div className="card w-3/5 mx-7 bg-slate-50">
+        <div className="card w-full md:w-3/5 mx-2 md:mx-7 bg-slate-50">
           <div className="card-body">
             <h2 className="card-title text-2xl font-bold my-4">About Bitcoin</h2>
             <h3 className='text-lg font-bold'>What is Bitcoin?</h3>
@@ -19,10 +19,10 @@ Bitcoin can be used to send and receive payments anywhere in the world at any ti
             <p className='my-4 text-black/55 text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, facilis dolores consequatur hic non laudantium quisquam tenetur veritatis eaque esse!Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quae quo saepe deserunt cum itaque nulla facilis laudantium, temporibus voluptatum accusamus id, nisi fuga omnis dignissimos. Natus repellat non, nam suscipit molestiae rerum, ducimus obcaecati quis dolore distinctio repellendus rem in voluptates laborum a et, beatae eos nobis maiores dolorem.</p>
           </div>
           <div className='divider mx-7'></div>
-        <div className="mx-7">
+        <div className="mx-2 md:mx-7">
             <h2 className='font-bold text-2xl my-4'>Already Holding Bitcoin?</h2>
-            <div className='flex'>
-            <div className="card card-side h-40 w-96 bg-gradient-to-br from-green-400 to-cyan-800 shadow-xl">
+            <div className='block md:flex'>
+            <div className="card card-side h-40 w-96 bg-gradient-to-br from-green-400 to-cyan-800 shadow-xl my-2">
               <figure className='rounded-lg w-28 px-3'><img src="./cryptoTrading.jpg" alt="Crypto Trading" className="rounded-xl" /></figure>
               <div className='px-4'>
                 <h2 className="card-title m-4 text-white">Calculate your Profits</h2>
@@ -31,7 +31,7 @@ Bitcoin can be used to send and receive payments anywhere in the world at any ti
                 </div>
               </div>
             </div>
-            <div className="card card-side h-40 w-96 bg-gradient-to-br from-orange-400 to-red-600 shadow-xl mx-7">
+            <div className="card card-side h-40 w-96 bg-gradient-to-br from-orange-400 to-red-600 shadow-xl my-2 md:mx-7">
               <figure className='rounded-lg w-48 px-3'><img src="./cryptoTrading1.jpg" alt="Crypto Trading" className="rounded-xl" /></figure>
               <div className='px-4'>
                 <h2 className="card-title m-4 text-white">Calculate your Tax Liability</h2>

@@ -30,8 +30,8 @@ export default function Hero() {
   // data && console.log(data);
 
   return (
-    <section className="flex mx-7">
-        <div className='basis-3/5 bg-white mr-2 rounded-lg shadow-lg shadow-slate-200'>
+    <section className="flex max-sm:flex-col mx-2 md:mx-7">
+        <div className=' md:basis-3/5 bg-white mr-2 rounded-md shadow-md shadow-slate-200'>
           {data && 
           <>
             <div className='p-5'>
@@ -43,9 +43,9 @@ export default function Hero() {
             <div className='px-6'>
               <div className='text-3xl font-semibold inline-block'>${(data.usd).toLocaleString()}</div>
               {data.usd_24h_change > 0 ? 
-              <div className=' inline-block bg-green-100 text-green-600 rounded-lg px-2 py-1 mx-5'><div className='inline-block border-b-green-600 border-b-8 border-l-8 border-r-8 border-l-transparent border-r-transparent mx-1'></div>{data.usd_24h_change.toFixed(2)}%</div>
+              <div className=' inline-block bg-green-100 text-green-600 rounded-md px-2 py-1 mx-5'><div className='inline-block border-b-green-600 border-b-8 border-l-8 border-r-8 border-l-transparent border-r-transparent mx-1'></div>{data.usd_24h_change.toFixed(2)}%</div>
               :
-              <div className=' inline-block bg-red-100 text-red-600 rounded-lg px-2 py-1 mx-5'><div className='inline-block border-t-red-600 border-t-8 border-l-8 border-r-8 border-l-transparent border-r-transparent mx-1'></div>{data.usd_24h_change.toFixed(2)}%</div>
+              <div className=' inline-block bg-red-100 text-red-600 rounded-md px-2 py-1 mx-5'><div className='inline-block border-t-red-600 border-t-8 border-l-8 border-r-8 border-l-transparent border-r-transparent mx-1'></div>{data.usd_24h_change.toFixed(2)}%</div>
               }
               <div className='inline-block text-slate-400'>(24H)</div>
             </div>
@@ -61,7 +61,7 @@ export default function Hero() {
             <TradingViewWidget width={370} height={350}/>
           </div>
         </div>
-        <div className='flex-col basis-2/5 mx-2'>
+        <div className='flex-col md:basis-2/5 mx-2 max-sm:my-4'>
           <div className=''>
             <SideCard/>
           </div>

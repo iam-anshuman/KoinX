@@ -27,3 +27,15 @@ body{
   height: 130px;
   border-radius: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .donut-graph{
+    width: 90px;
+    height: 90px;
+  }
+  .donut-graph::after{
+    width: 60px;
+    height: 60px;
+  }
+  
+}
